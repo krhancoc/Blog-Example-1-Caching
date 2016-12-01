@@ -13,7 +13,7 @@ def index(request):
     else:
        return render(request,'blog/index.html', {})
 
-@cache('sql')
+@cache('default')
 def fibb(num):
     if num in (0,1):
         return num
